@@ -7,6 +7,7 @@ class Annoucement
     private int $id;
     private string $entitled;
     private string $description;
+    private string $workplace;
 
     public function getId()
     {
@@ -38,6 +39,19 @@ class Annoucement
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getWorkplace()
+    {
+        return $this->workplace;
+    }
+
+
+    public function setWorkplace(string $workplace): self
+    {
+        $this->workplace = $workplace;
 
         return $this;
     }
