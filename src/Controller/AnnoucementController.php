@@ -9,13 +9,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AnnoucementController extends AbstractController
 {
-    #[Route('annoucement/new')]
+    #[Route('/annoucement/new')]
     public function create(): Response
     {
         $annoucement = new Annoucement();
         $form = $this->createForm(AnnoucementType::class, $annoucement);
         return $this->render('annoucement/form.html.twig', [
-            "annoucemnet_form" => $form->createView()
+            "annoucement_form" => $form->createView()
         ]);
     }
 }
