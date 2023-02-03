@@ -2,7 +2,7 @@
 
 namespace App\Entity;
 
-class Annoucement 
+class Annoucement
 {
     private int $id;
     private string $entitled;
